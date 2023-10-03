@@ -103,11 +103,12 @@
 let arr = ["abhishek","archana", "komal", "kajal", "aryan","kumar", "sourabh", "akshay"];
 let inser = 3
 let setv = "vishal"
-for(let x=0; x<arr.length; x++){
-    if(x>=inser){
-        if(x==inser){
-            arr[x] = setv
-        }
+for(let x=arr.length-1; x>=0; x--){ // 8
+    console.log(x);
+    arr[x+1] = arr[x]
+    
+    if(x==inser){
+        arr[x] = setv
     }
 }
-console.log(arr);
+console.log(arr[0]);

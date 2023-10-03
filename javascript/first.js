@@ -87,18 +87,27 @@
 
 
 // Array Delete specific element
-let arr = ["abhishek","archana", "komal", "kajal", "aryan","kumar", "sourabh", "akshay"];
-let delPos = 3;
-// for(let x=delPos; x<arr.length-1; x++){
-//     arr[x] = arr[x+1]
+// let arr = ["abhishek","archana", "komal", "kajal", "aryan","kumar", "sourabh", "akshay"];
+// let delPos = 3;
+// let setVal = 'vishal'
+// for(let x=arr.length-1; x>=0; x--){
+//     if(x==delPos){
+//         arr[x] = setVal
+//     }
 // }
-// agar starting ke 4 val ko remove karna ho tab 
-for(let x=delPos; x<arr.length-1; x++){
-    var arr1 = arr[x] = arr[x+1]
-    console.log(arr1)
+// console.log(arr)
+
+
+// Insert data in specific index without remove other element 
+
+let arr = ["abhishek","archana", "komal", "kajal", "aryan","kumar", "sourabh", "akshay"];
+let inser = 3
+let setv = "vishal"
+for(let x=0; x<arr.length; x++){
+    if(x>=inser){
+        if(x==inser){
+            arr[x] = setv
+        }
+    }
 }
-
-console.log(arr)
-
-
-
+console.log(arr);

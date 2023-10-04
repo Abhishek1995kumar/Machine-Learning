@@ -149,16 +149,22 @@
 
 
 // Merge Array
-let arr = ["abhishek","archana", "komal", "kajal", "aryan","kumar", "sourabh", "akshay"];
+let arr = ["archana", "komal", "kajal","parul","sagun","sanskriti"];
+let arr1 = ["abhishek","aryan","kumar", "sourabh", "akshay"];
 let arr2 = ["kanchan", "fatima", "tehsin", "nagma", "shalu khan"];
-let arr3 = new Array();
+let arr3 = [];
+// 
 for(let x=0; x<arr.length; x++){
-    // 1st method 
-    // arr3 = arr + "," + arr2
-    // 2nd method
-    arr3[x] = arr[x];
+    arr3[x] = arr[x]
 }
-console.table([arr3, typeof arr3])
+for(let y=0; y<arr1.length; y++){
+    arr3[arr.length+y] = arr1[y]
+}
+for(let z=0; z<arr2.length; z++){
+    arr3[arr.length+z] = arr2[z]
+}
+// console.table([arr3, typeof arr3])
+console.table(arr3)
 
 
 

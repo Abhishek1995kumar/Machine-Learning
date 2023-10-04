@@ -99,16 +99,69 @@
 
 
 // Insert data in specific index without remove other element 
+// let arr = ["abhishek","archana", "komal", "kajal", "aryan","kumar", "sourabh", "akshay"];
+// let inser = 3
+// let setv = "vishal"
+// for(let x=arr.length-1; x>=0; x--){ 
+//     if(x>=inser){
+//         arr[x+1] = arr[x]
+//         if(x==inser){
+//             arr[x] = setv
+//         }
+//     }
+// }
+// console.log(arr[0]);
 
+
+
+
+// Array Element Delete 
+// let arr = ["abhishek","archana", "komal", "kajal", "aryan","kumar", "sourabh", "akshay"];
+// let del = 3
+// for(let x=del; x<arr.length-1; x++){ // yaha par -1 dene se ek index number remove ho jata hai array se
+//     // 3    4 -- ye loop par nahi depend hai balki ye arr ki value ko le kar increase kar de rha hai
+//     // yaha par data delete nhi hua hai 3rd position ki element ko remove kar ke last ki value ka replica kar diya hai
+//     arr[x] = arr[x+1]
+// }
+// arr.length = arr.length-1;
+// console.log(arr)
+
+
+
+
+// Array Search
+// let arr = ["abhishek","archana", "komal", "kajal", "komal" ,"aryan","kumar", "sourabh", "akshay"];
+// let sear = "komal";
+// let val=undefined;
+// for(let x=0; x<arr.length-1; x++){
+//     if(arr[x]==sear){
+//         val = sear
+//         var v = `${x} -- ${val}`;
+//         // agar hamko next komal ko search karna ho tab kya karenge -- val ki value ko increase kar denge
+//         var valSec = val 
+//         break;
+//     }
+// }
+// console.log(v)
+
+
+
+
+
+// Merge Array
 let arr = ["abhishek","archana", "komal", "kajal", "aryan","kumar", "sourabh", "akshay"];
-let inser = 3
-let setv = "vishal"
-for(let x=arr.length-1; x>=0; x--){ // 8
-    console.log(x);
-    arr[x+1] = arr[x]
-    
-    if(x==inser){
-        arr[x] = setv
-    }
+let arr2 = ["kanchan", "fatima", "tehsin", "nagma", "shalu khan"];
+let arr3 = new Array();
+for(let x=0; x<arr.length; x++){
+    // 1st method 
+    // arr3 = arr + "," + arr2
+    // 2nd method
+    arr3[x] = arr[x];
 }
-console.log(arr[0]);
+console.table([arr3, typeof arr3])
+
+
+
+
+
+
